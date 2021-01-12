@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>RAKSHA SHARMA</title>
+</head>
+
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">RAKSHA SHARMA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#banner">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#table">Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#form">Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#video">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#audio">Audio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#image">Image</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!----------------------------BANNER SECTION---------------------------->
+
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="name">RAKSHA SHARMA</p>
+                    <p>
+                        My name is Raksha Sharma. I am pursuing B.E. in Electronics And Communication Engineering.
+                        Currently, I
+                        am
+                        in 3rd year.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="image/14.png" class="img-fluid banner-img">
+                </div>
+            </div>
+        </div>
+        <img src="image/4.png" class="bottom-img">
+    </section>
+
+    <!--------------------  Table section -------------------->
+    <section id="table">
+        <h2 class="text-center title">TABLE</h2>
+        <div class="container">
+            <table class="table table-bordered table-hover">
+                <caption>Institutions, I have studied in</caption>
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">S.No.</th>
+                        <th scope="col">Institutions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Kendriya Vidyalaya G.C.F. Jabalpur</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Kendriya Vidyalaya No.1 Kota, jn.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>M.B.M. Engineering College, Jodhpur</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <!----------------------- FORM ----------------------->
+    <div class="container" id="form">
+        <h2 class="text-center title">FORM</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="number" class="form-control" id="phone" aria-describedby="phoneHelp"
+                    placeholder="Enter phone number">
+                <small id="phoneHelp" class="form-text text-muted">We'll never share your phone number with anyone
+                    else.</small>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!--------------------- VIDEO --------------------->
+
+    <div id="video" class="container text-center">
+        <h2 class="text-center title">VIDEO</h2>
+        <video src="videos/You_re_my_Honeybunch,_Sugarplum_!.mp4" controls>Your
+            browser doesn't support <code> Video</code> element.</video>
+    </div>
+
+    <!--------------------- AUDIO --------------------->
+    <div id="audio" class="container text-center">
+        <h2 class="text-center title">AUDIO</h2>
+        <div>
+            <audio src="audio/iPhone7AirPodsStrollAppleOfficial256kRingtone.mp3" id="player" controls>Your browser
+                doesn't support<code> Audio</code> element.</audio>
+        </div>
+        <!-- <div class="col-md-6"> 
+            <button onclick="document.getElementById('player').play()"><i class="fa fa-play-circle" aria-hidden="true"></i></button> 
+            <button onclick="document.getElementById('player').pause()"><i class="fa fa-pause-circle" aria-hidden="true"></i></button> 
+            <button onclick="document.getElementById('player').volume -= 0.1"><i class="fa fa-volume-down" aria-hidden="true"></i></button> 
+            <button onclick="document.getElementById('player').volume += 0.1"><i class="fa fa-volume-up" aria-hidden="true"></i></button> 
+          </div> -->
+        <div>
+            <audio src="audio/PostMalonerockstarft21Savage256kRingtone.mp3" id="player2" controls>Your browser doesn't support <code>Audio</code> element.</audio>
+            <!-- <div class="col-md-6"> 
+            <button onclick="document.getElementById('player2').play()"><i class="fa fa-play-circle" aria-hidden="true"></i></button> 
+            <button onclick="document.getElementById('player2').pause()"><i class="fa fa-pause-circle" aria-hidden="true"></i></button> 
+            <button onclick="document.getElementById('player2').volume -= 0.1"><i class="fa fa-volume-down" aria-hidden="true"></i></button> 
+            <button onclick="document.getElementById('player2').volume += 0.1"><i class="fa fa-volume-up" aria-hidden="true"></i></button> 
+          </div> -->
+        </div>
+    </div>
+
+<!--------------------------- IMAGE --------------------------->
+    <section>
+        <div  id="image" class="container-fluid">
+            <h2 class="text-center title">IMAGES</h2>
+            <div class="row">
+                <div class="column">
+                    <img src="image/10.jpeg" alt="">
+                    <img src="image/11.jpeg" alt="">
+                    <img src="image/12.jpeg" alt="">
+                    <img src="image/1.jfif" alt="">
+                    <img src="image/5.jpeg" alt="">
+                </div>
+                <div class="column">
+                    <img src="image/photo-1499951360447-b19be8fe80f5.png" alt="">
+                    <img src="image/photo-1451187580459-43490279c0fa.jfif" alt="">
+                    <img src="image/9.jpeg" alt="">
+                    <img src="image/2.jpeg" alt="">
+                    <img src="image/10.jpeg" alt="">
+                </div>
+                <div class="column">
+                    <img src="image/6.jpeg" alt="">
+                    <img src="image/7.jpeg" alt="">
+                    <img src="image/8.jpeg" alt="">
+                    <img src="image/4.jpeg" alt="">
+                    <img src="image/3.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="text-center social-media">
+        <h3> FOLLOW US ON SOCIAL MEDIA</h3>
+        <div>
+            <a href="#"><img src="image/fb.png"></a>
+            <a href="#"><img src="image/insta.png"></a>
+            <a href="#"><img src="image/tele.png"></a>
+            <a href="#"><img src="image/twitter.png"></a>
+        </div>
+    </section>
+
+    <!-----------------FOOTER  ----------------->
+
+    <footer id="footer">
+        <img src="image/5.png" class="bottom-img">
+        <div class="container footer-box text-center">
+            Copywrite &copy; Raksha Sharma 2020
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
