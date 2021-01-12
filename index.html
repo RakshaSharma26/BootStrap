@@ -34,10 +34,10 @@
                         <a class="nav-link" href="#form">Form</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#video">Video</a>
+                        <a class="nav-link" href="#audio">Audio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#audio">Audio</a>
+                        <a class="nav-link" href="#video">Video</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#image">Image</a>
@@ -46,6 +46,7 @@
             </div>
         </nav>
     </section>
+
     <!----------------------------BANNER SECTION---------------------------->
 
     <section id="banner">
@@ -68,11 +69,12 @@
         <img src="image/4.png" class="bottom-img">
     </section>
 
-    <!--------------------  Table section -------------------->
+    <!--------------------  TABLE SECTION -------------------->
+
     <section id="table">
         <h2 class="text-center title">TABLE</h2>
         <div class="container">
-            <table class="table table-bordered table-hover">
+            <table class="table table-hover">
                 <caption>Institutions, I have studied in</caption>
                 <thead class="thead-dark">
                     <tr>
@@ -100,8 +102,9 @@
 
 
     <!----------------------- FORM ----------------------->
+
     <div class="container" id="form">
-        <h2 class="text-center title">FORM</h2>
+        <h2 class="title text-center">FORM</h2>
         <form>
             <div class="form-group">
                 <label for="name">Name</label>
@@ -131,17 +134,11 @@
         </form>
     </div>
 
-    <!--------------------- VIDEO --------------------->
-
-    <div id="video" class="container text-center">
-        <h2 class="text-center title">VIDEO</h2>
-        <video src="videos/You_re_my_Honeybunch,_Sugarplum_!.mp4" controls>Your
-            browser doesn't support <code> Video</code> element.</video>
-    </div>
 
     <!--------------------- AUDIO --------------------->
+
     <div id="audio" class="container text-center">
-        <h2 class="text-center title">AUDIO</h2>
+        <h2 class="title">AUDIO</h2>
         <div>
             <audio src="audio/iPhone7AirPodsStrollAppleOfficial256kRingtone.mp3" id="player" controls>Your browser
                 doesn't support<code> Audio</code> element.</audio>
@@ -153,20 +150,28 @@
             <button onclick="document.getElementById('player').volume += 0.1"><i class="fa fa-volume-up" aria-hidden="true"></i></button> 
           </div> -->
         <div>
-            <audio src="audio/PostMalonerockstarft21Savage256kRingtone.mp3" id="player2" controls>Your browser doesn't support <code>Audio</code> element.</audio>
-            <!-- <div class="col-md-6"> 
-            <button onclick="document.getElementById('player2').play()"><i class="fa fa-play-circle" aria-hidden="true"></i></button> 
-            <button onclick="document.getElementById('player2').pause()"><i class="fa fa-pause-circle" aria-hidden="true"></i></button> 
-            <button onclick="document.getElementById('player2').volume -= 0.1"><i class="fa fa-volume-down" aria-hidden="true"></i></button> 
-            <button onclick="document.getElementById('player2').volume += 0.1"><i class="fa fa-volume-up" aria-hidden="true"></i></button> 
-          </div> -->
+            <audio src="audio/PostMalonerockstarft21Savage256kRingtone.mp3" id="player2" controls>Your browser doesn't
+                support <code>Audio</code> element.</audio>
         </div>
     </div>
 
-<!--------------------------- IMAGE --------------------------->
-    <section>
-        <div  id="image" class="container-fluid">
-            <h2 class="text-center title">IMAGES</h2>
+
+    <!--------------------- VIDEO --------------------->
+
+    <div id="video" class="container text-center">
+        <h2 class="text-center title">VIDEO</h2>
+        <video src="videos/You_re_my_Honeybunch,_Sugarplum_!.mp4" controls>Your
+            browser doesn't support <code> Video</code> element.</video>
+    </div>
+
+    
+
+    
+    <!--------------------------- IMAGE --------------------------->
+
+    <section id="image" class="container text-center">
+        <h2 class="title">IMAGES</h2>
+        <div class="container-fluid">
             <div class="row">
                 <div class="column">
                     <img src="image/10.jpeg" alt="">
@@ -193,9 +198,7 @@
         </div>
     </section>
 
-
-
-
+<!------------------- SOCIAL MEDIA ------------------->
 
     <section class="text-center social-media">
         <h3> FOLLOW US ON SOCIAL MEDIA</h3>
