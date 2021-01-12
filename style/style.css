@@ -58,13 +58,13 @@ nav{
 /*************TABLE  *************/
 
 #table, #form, #video, #audio{
-    padding:5vh;
+    padding:1vh !important;
 }
 
-#table h2, #form h2, #video h2, #audio h2, #image h2{
+#table h2, #form h2, #video h2, #audio h2{
     /* text-align:center; */
-    margin:3vh;
-    padding-top:9vh;
+    margin-top:2vh !important;
+    padding-top:5vh !important;
 }
 
 .title::before{
@@ -101,7 +101,8 @@ nav{
     border-radius: 20px;
     background-color: #7fcec5;
     background-image: linear-gradient(to right, #14557b 0%, #7fcec5  74%);
-    margin: 30px;
+    margin-top: 30px;
+    /* margin-bottom: 5px; */
 }
 
 /************** VIDEO **************/
@@ -131,8 +132,13 @@ nav{
     font-size: 32px;
 } */
 
-/* IMAGE */
 
+/*********************** IMAGE ***********************/
+
+#image h2{
+    margin-top:50px;
+    padding:20px;
+}
 
 .row{
     display: flex;
@@ -161,6 +167,16 @@ nav{
 }
 
 @media (max-width: 426px){
+    #table h2, #form h2, #video h2, #audio h2, #image h2{
+        /* text-align:center; */
+        margin-top:5.8vh !important;
+        padding-top:3vh !important;
+    }
+
+    .container video{
+        width:100%;
+    }
+
     .row .column{
         flex: 100%;
     }
@@ -170,6 +186,16 @@ nav{
 }
 
 @media (min-width: 427px) and (max-width: 768px){
+    #table h2, #form h2, #video h2, #audio h2, #image h2{
+        /* text-align:center; */
+        margin:2vh;
+        padding-top:6vh;
+    }
+
+    .container video{
+        width:100%;
+    }
+
     .row .column{
         flex: 50%;
     }
