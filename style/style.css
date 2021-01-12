@@ -2,12 +2,14 @@
     margin:0;
     padding: 0;
 }
+
 #nav-bar{
     position:sticky;
     top:0;
     z-index: 2;
     text-transform: uppercase;
 }
+
 nav{
     background-color: #7fcec5;
     background-image: linear-gradient(to right, #14557b 0%, #7fcec5  74%);
@@ -33,14 +35,15 @@ nav{
     outline:none !important;
 }
 
-
 /*************** BANNER ***************/
+
 #banner{
     background-color: #7fcec5;
     background-image: linear-gradient(to right, #14557b 0%, #7fcec5  74%);
     color: white;
     padding-top:5%;
 }
+
 .name{
    font-size:40px;
    font-weight:600;
@@ -55,13 +58,27 @@ nav{
 .banner-img{
     width:100%;
 }
+
 /*************TABLE  *************/
+
+#table table{
+    width: 80%;
+    margin: auto;
+}
+
+#table table, #table th, #table tr{
+    border: 1.4px solid #999!important;
+}
 
 #table, #form, #video, #audio{
     padding:1vh !important;
 }
 
-#table h2, #form h2, #video h2, #audio h2{
+#table thead{
+    text-transform: uppercase;
+}
+
+#table h2, #form h2, #video h2, #audio h2, #image h2{
     /* text-align:center; */
     margin-top:2vh !important;
     padding-top:5vh !important;
@@ -94,6 +111,19 @@ nav{
 
 /************************** FORM **************************/
 
+#form form{
+    width:90%;
+    margin:auto;
+    border: 1px solid #abc;
+    box-shadow: 0 0 10px #888;
+    padding:20px;
+}
+
+#form form label{
+    text-transform: uppercase;
+    font-weight:500;
+}
+
 .container form button{
     box-shadow:none;
     padding: 8px 25px;
@@ -111,6 +141,8 @@ nav{
     padding:10px;
     /* margin:20px; */
     width:70%;
+    /* border: 1px solid #abc; */
+    box-shadow: 0 0 10px #888;
 }
 
 /************** AUDIO **************/
@@ -120,6 +152,7 @@ nav{
     margin: 20px 0;
     width:80%;
     filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    /* box-shadow: 0 0 10px #888; */
     /* background-color: #95B9C7; */ 
 }
 
@@ -135,8 +168,7 @@ nav{
 
 /*********************** IMAGE ***********************/
 
-#image h2{
-    margin-top:50px;
+#image{
     padding:20px;
 }
 
@@ -166,64 +198,12 @@ nav{
     filter: grayscale(0) brightness(1);
 }
 
-@media (max-width: 426px){
-    #table h2, #form h2, #video h2, #audio h2, #image h2{
-        /* text-align:center; */
-        margin-top:5.8vh !important;
-        padding-top:3vh !important;
-    }
-
-    .container video{
-        width:100%;
-    }
-
-    .row .column{
-        flex: 100%;
-    }
-    .row .column img{
-        filter: grayscale(0) brightness(1);
-    }
-}
-
-@media (min-width: 427px) and (max-width: 768px){
-    #table h2, #form h2, #video h2, #audio h2, #image h2{
-        /* text-align:center; */
-        margin:2vh;
-        padding-top:6vh;
-    }
-
-    .container video{
-        width:100%;
-    }
-
-    .row .column{
-        flex: 50%;
-    }
-    .row .column img{
-        filter: grayscale(0) brightness(1);
-    }
-}
-
-@media (min-width: 767px) and (max-width: 991px){
-    .row .column img{
-        filter: grayscale(0) brightness(1);
-    }
-}
-
-
-
-
-
-
-
 /**************** SOCIAL MEDIA ICON ****************/
 .social-media{
     background: #f8f9fa;
     padding-top: 100px;
     padding-bottom: 30px;;
 }
-
-
 
 .social-media img{
     width:50px;
@@ -250,4 +230,60 @@ nav{
     font-size: 18px;
     color:white;
     
+}
+
+/********************** MEDIA QUERY **********************/
+
+@media (max-width: 426px){
+    #table table{
+        width: 100%;
+        margin: auto;
+    }
+
+    #table h2, #form h2, #video h2, #audio h2, #image h2{
+        /* text-align:center; */
+        margin-top:5.8vh !important;
+        padding-top:3vh !important;
+    }
+
+    .container video{
+        width:100%;
+    }
+
+    .row .column{
+        flex: 100%;
+    }
+    .row .column img{
+        filter: grayscale(0) brightness(1);
+    }
+}
+
+@media (min-width: 427px) and (max-width: 768px){
+    #table table{
+        width: 100%;
+        margin: auto;
+    }
+
+    #table h2, #form h2, #video h2, #audio h2, #image h2{
+        /* text-align:center; */
+        margin:2vh !important;
+        padding-top:6vh !important;
+    }
+
+    .container video{
+        width:100%;
+    }
+
+    .row .column{
+        flex: 50%;
+    }
+    .row .column img{
+        filter: grayscale(0) brightness(1);
+    }
+}
+
+@media (min-width: 767px) and (max-width: 991px){
+    .row .column img{
+        filter: grayscale(0) brightness(1);
+    }
 }
